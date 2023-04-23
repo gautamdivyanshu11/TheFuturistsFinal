@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PledgePort</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="funding.css">
+    <link rel="shortcut icon" href="images//pied-piper-pp.ico   " type="image/x-icon">
+    <script src="https://kit.fontawesome.com/97cd3cc0d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+       
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coiny">
+
+</head>
+<body >
+  
+  <!--navbar-->
+    
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/pied-piper-pp.ico" alt="" width="30" height="28"> PledgePort</a>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              
+            </ul>
+            
+            <div class="create">
+              
+              
+              <button type="button" class="btn btn-outline-success open-button" onclick="openForm()">Create a Campaign</button>
+              <button type="button" id="connect-button" class="btn btn-success">Connect to MetaMask</button>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      
+      
+      <div id="mySidebar" class="sidebar">
+        <a class="options" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="options" href="#"><i class="fa-solid fa-house" style="color: #f0f0f0;"></i> Dashboard</a>
+        <a class="options" href="#"><i class="fa-solid fa-bullhorn" style="color: #f0f0f0;"></i> Campaign</a>
+        <a class="options" href="#"><i class="fa-solid fa-money-check-dollar" style="color: #f0f0f0;"></i> Payment</a>
+        <a class="options" href="#"><i class="fa-solid fa-money-bill-transfer" style="color: #f0f0f0;"></i> withdraw</a>
+        <a class="options" href="#"><i class="fa-regular fa-address-card" style="color: #f0f0f0;"></i> Profile</a>
+        <a class="options" href="#"><i class="fa-solid fa-right-from-bracket" style="color: #f0f0f0;"></i> logout</a>
+        
+        
+      </div>
+      <div class="card-row3">
+        <h1>PledgePort</h1>
+    </div>
+      <div class="card-row">
+
+        <div class="card"> 
+          <div  >
+            <img src="https://img.freepik.com/free-vector/isometric-crowdfunding-illustration_1284-19619.jpg?w=2000" alt="Avatar" style="width:190px; height:190px;">
+            <div class="container">
+              <h4><b>Campaign1</b></h4>
+              <p>0x1f92386379a81143dEE0f3819C6460BAf5b5ea6F</p>
+            </div>
+          </div>
+        </div>
+       </div>
+       <div class="card-row1">
+
+        <div class="card"> 
+          <div  >
+            <img src="https://www.investopedia.com/thmb/zMiNaHMDUJ8Ur8LlR1V4Fx8K86c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/OnlineFundraising_-LuckyStep48-2375d9d6f80747a288e44b1735764646.jpg" alt="Avatar" style="width:190px; height:190px;">
+            <div class="container">
+              <h4><b>Campaign2</b></h4>
+              <p>0x1f92386379a81143dEE0f3819C6460BAf5b5ea6F</p>
+            </div>
+          </div>
+        </div>
+       </div>
+
+       <div class="card-row2">
+
+        <div class="card"> 
+          <div  >
+            <img src="https://lh3.googleusercontent.com/TlqUe_ZFwi0h0lgVknZmpICBcvUYppdCrjP9HvStKtj1aqPw4VDgpwsBI94DYctQI1YS3SG0OHp0eFF0Sqhf5Ju5cPaqysQSvJO5idTfMMI1Xw1CnIiIe7Z-evjYg0VPPOXri5hI0t1rVhR3wI-PMUltiAqdAj4UNUTc5LXzQnlAKUtUL_apLkPqIvP5-Q"  alt="Avatar" style="width:190px; height:190px;">
+            <div class="container">
+              <h4><b>Campaign3</b></h4>
+              <p>0x1f92386379a81143dEE0f3819C6460BAf5b5ea6F</p>
+            </div>
+          </div>
+        </div>
+       </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()" style="width:40px;">&#9776;</button>
+        
+      </div>
+      
+      
+      
+ 
+  
+  
+  <form id="transfer-form">
+    <label for="recipient">Recipient Address:</label>
+    <input type="text" name="recipient" id="recipient"><br><br>
+    <label for="amount">Amount of Ether:</label>
+    <input type="text" name="amount" id="amount"><br><br>
+    <button type="submit">Send</button>
+
+    
+  </form>
+
+ 
+
+  <div class="form-popup" id="myForm">
+    <div class="row">
+      <div class="col-md-12">
+        <form action="index.html" class="form2" method="post" style="width: 500px;">
+          <h1> Create Campaign </h1>
+          
+          <fieldset>
+           
+  
+           <div class="row">
+  
+           <div class="col-lg-6" >
+            <label for="name"><b>Name:</b></label>
+            <input type="text" placeholder="Enter name of Campaign" name="name" required><br>
+          </div>
+  
+          <div class="col-lg-6" >
+              <label for="photo"><b>Photo URL:</b></label>
+              <input type="url" placeholder="Enter photo URL" name="Photo URL" required><br>
+          </div>
+  
+          <div class="col-lg-6" >
+              <label for="name"><b>Goal:</b></label>
+            <input type="text" placeholder="Goal" name="Goal" required><br>
+          </div>
+  
+          <div class="col-lg-6" >
+              <label for="date"><b>Date:</b></label>
+              <input type="date" name="date" required><br>
+          </div>
+  
+          <div class="col-lg-12" >
+              <label for="description"><b>Description:</b></label>
+              <textarea placeholder="Enter description" name="description" required></textarea>
+          </div>
+  
+          <div class="col-lg-6" >
+              <label for="private"><b>Private Key:</b></label>
+              <input type="password" placeholder="Enter private key" name="private" required><br>
+          </div>
+  
+          <div class="col-lg-6" >
+              
+            <label for="Amount"><b>Amount:</b></label>
+              <input type="number" placeholder="Enter amount (ETH)" name="amount" required><br>
+          </div>
+  
+          </fieldset>
+          <fieldset>  
+  
+          <button type="submit" >Create</button>
+          <button type="submit" id="cancelbtn" class="btn cancel" style="color: #f0f0f0;" onclick="closeForm() ">Close</button>
+          
+         </form>
+          </div>
+        </div>
+      
+      </div>
+
+      
+      
+      
+ 
+
+
+  
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+   <script src="funding.js" charset="UTF-8"></script>   
+</body>
+</html>
